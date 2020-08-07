@@ -1,0 +1,6 @@
+html{
+    background-color: darkgrey;/* fonod de la ventana */
+    display: flex;/* Tipo de la pantalla de la pagina */
+    align-items: center;/* Centro los elementos */
+    justify-content: center;/* Centro los elementos */
+}
