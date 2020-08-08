@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
+
 from FrivUD.vistas import juego_1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('juego1/',juego_1)
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
